@@ -13,7 +13,7 @@
   --color-search-border--focus: #8e44ad;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --color-bg: #222222;
     --color-text: #bbb;
@@ -38,10 +38,16 @@ body {
   background-color: var(--color-bg);
 }
 
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
 table {
   width: 100%;
   background: var(--color-table-bg);
-  border: 0;
+  border: 0px;
   table-layout: auto;
 }
 
@@ -65,6 +71,11 @@ table thead tr th {
 
 table tr.even {
   background: var(--color-table-bg--even);
+}
+
+#content {
+    padding-top: 80px;
+    overflow-y: auto;
 }
 
 a {
@@ -110,26 +121,6 @@ a:visited {
   align-items: center;
   margin-left: 0.625rem;
   margin-right: 0.625rem;
-}
-
-#search {
-  display: block;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: var(--color-search-text);
-  background-color: var(--color-search-bg);
-  background-image: none;
-  background-clip: padding-box;
-  border: 1px solid var(--color-search-border);
-  border-radius: 0.25rem;
-  margin-left: 1rem;
-  -webkit-appearance: textfield;
-}
-
-#search:focus {
-  border-color: var(--color-search-border--focus);
-  outline: 0;
 }
 
 /* Hide extra columns so they don't squash file names */

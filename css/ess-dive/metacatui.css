@@ -1,0 +1,325 @@
+@import url("../metacatui.css");
+
+/*
+* Header
+*/
+.brand{
+    background:  url(https://data.ess-dive.lbl.gov/js/themes/ess-dive/img/logo-w-title_wide.png) no-repeat;
+    background: -webkit-image-set( url(https://data.ess-dive.lbl.gov/js/themes/ess-dive/img/logo-w-title_wide.png)    1x,
+                                   url(https://data.ess-dive.lbl.gov/js/themes/ess-dive/img/logo-w-title_wide.png) 2x);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75px; /* height in CSS pixels */
+    width: 250px; /* width in CSS pixels */
+    display: inline-block;
+    font-family: AllerLight, Helvetica, sans-serif;
+}
+
+.header .border-image{
+    background-image: url('../img/border-image.jpg');
+    background-size: cover;
+    height: 25px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.header #inner-header {
+    max-width: 100%;
+    padding: 0 80px 0 10px;
+}
+
+/* 
+* Main navigation bar
+*/
+#Navbar {
+    border-bottom: 2px solid #F2CC0D;
+    /*height: 90px;*/
+}
+
+#main-nav{
+    padding-top: 15px;
+}
+
+.nav-link-title{
+    padding: 20px 25px 0 25px !important;
+    font-family: arial !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: #875900 !important;
+    text-transform: uppercase;
+}
+
+.nav-link-title:hover{
+    color: #23A600 !important;
+}
+
+.nav-link-title-user{
+    padding: 20px 0 0 0 !important;
+    font-family: arial !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: #0f74bb !important;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+}
+
+.nav-link-title-user:hover{
+    color: #3d92cc !important;
+}
+
+.nav .dropdown-toggle .caret {
+    margin-top: 10px !important;
+    margin-right: 5px !important;
+    margin-left: 0px !important;
+    border-top-color: #0f73bc !important;
+}
+
+#menu-main-navigation .btn.disabled{
+  color: #ddd !important;
+  border: 1px solid #ddd !important;
+}
+
+#menu-main-navigation > li {
+    display: inline-block;
+}
+
+.header .nav .dropdown-toggle.user {
+    max-width: 200px !important;
+}
+
+.Editor #logo{
+	height: auto;
+}
+
+/* 
+* Main navigation drop-down menu
+*/
+.dropdown-menu {
+    border-radius: 0px !important;
+    padding: 20px 0 0 0;
+    width: 200px;
+    background: '#f8f8f8';
+}
+
+.dropdown .dropdown-menu {
+    top: 50px;
+    padding: 0;
+}
+
+.nav-link-title {
+    background-color: transparent !important;
+    transition: color 0.4s;
+}
+
+.nav-link-title:hover {
+    transition: color 0.4s;
+}
+
+.header .dropdown-menu li a {
+    background-color: #f8f8f8 !important;
+    color: #875900;
+    font-family: arial !important;
+    font-size: 12px  !important;
+    font-weight:600 !important;
+    text-align: left !important;
+    text-transform: uppercase;
+    padding: 20px 20px !important;
+}
+
+.header .dropdown-menu li a:hover {
+    color: #23A600 !important;
+}
+
+.header .dropdown-menu li {
+    display: list-item;
+}
+
+.dropdown-menu li:first-child a {
+    border-top-left-radius: 0px  !important;
+    -moz-border-top-left-radius: 0px  !important;
+    -webkit-border-top-left-radius: 0px  !important;
+    border-top-right-radius: 0px  !important;
+    -moz-border-top-right-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom-left-radius: 0px  !important;
+    -moz-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    -moz-border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    border-bottom: 0px !important;
+}
+
+/*
+* Site message
+*/
+
+.message-sitewide {
+    background-color: #0E75BB;
+    color: #fff;
+    padding: 5px;
+    padding-bottom: 1px ;
+    padding-top: 1px;
+}
+
+.message-sitewide a, #editor-footer a:not(.btn){
+    color: #22e487;
+}
+
+.message-sitewide a:hover, #editor-footer a:hover{
+    text-decoration: underline;
+}
+
+.has-temporary-message #Content {
+    padding-top: 140px;
+}
+
+.has-temporary-message .alert-container .alert-error .close,
+.has-temporary-message .alert-container .alert-success .close
+{
+    top: 60px;
+}
+
+.has-temporary-message .alert-container .alert-error,
+.has-temporary-message .alert-container .alert-success
+{
+    margin-top: 50px;
+}
+
+
+/* 
+* Footer
+*/
+footer {
+ padding: 0px 20px 20px 20px;
+ margin-top: 0px;
+ color: #FDFDFD;
+ background-color: #b1cdd9;
+ border-top: 1px solid #9fc0cd;
+ width: 100%;
+ box-sizing: border-box;
+ z-index: 2;
+ height: 320px; /* Keeps the footer down */
+ position: fixed !important;
+}
+#Content{
+	padding-bottom: 350px; /* Keeps footer down */
+}
+
+.footer-inner-ess-dive {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#lbl-footer{
+    display: inline;
+}
+
+#footer-logos
+{
+    overflow: hidden;
+    padding: 0px;
+    width: 40%;
+	display: inline;
+}
+
+#footer-logos img{
+    margin: 0 15px 0 15px;
+}
+
+#footer-ess-dive
+{
+    overflow: hidden;
+    padding: 0px;
+    width: 30%;
+	display: inline;
+    font-size: .9em;
+}
+
+.mapMode footer, footer{
+    display: block;
+    height: 100px;/*10em;*/
+    background-color: #503501;
+    border-top: 1px solid #ececec;
+    text-align: center;
+    padding-top: 10px;
+}
+
+img.footer-logo-nersc {
+    height:60px;
+}
+
+img.footer-logo-lbnl {
+    height:75px;
+}
+
+img.footer-logo-nceas {
+    height:75px;
+}
+
+img.footer-logo-doe {
+    height:60px;
+}
+
+/*
+* Others
+*/
+
+#Content .center h1{
+  padding-top: 20px;
+}
+
+.mapMode #Content{
+    padding-top: 88px;
+}
+
+.has-temporary-message:not(.PortalView) #Content {
+    padding-top: 150px;
+}
+
+
+input.checkbox-inline {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+.filter-input-contain input.filter {
+    min-width: auto;
+}
+
+div.helptext-container {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: middle;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+li.helptext-list {
+    line-height: 1.3em;
+}
+
+.small-notice {
+    font-size: x-small;
+    color: gray;
+    margin: 0px 5px 0px;
+    display: initial;
+}
+
+.metadata-container .usage {
+    max-width: 100%;
+}
+
+.ui-helper-hidden-accessible { display:none; }
